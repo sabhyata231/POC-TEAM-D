@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="profile-container" >
+        <div class="profile-card">
+            <img src="https://images.pexels.com/photos/4709285/pexels-photo-4709285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Profile Picture" class="profile-pic">
+            <h2 id="name">Ankit Kumar Singh</h2>
+            <p class="description" >Software Engineer | Web Developer</p>
+            <h3>OUR CONTACT DETAILS </h3>
+           <h4>1.Number <p id="number">9721521237 </h4>
+           <h4>2.Email<p id="email"> ankit.elgoss@gmail.com </p></h4>
+            <h4>3.Address<p id="add"> Mirzamurad Varanasi</p></h4>
+            <span>
+            <button class="toggle-btn" onclick="toggleAbout()">About Me</button>
+            <div class="about-section" id="about">
+                <p >Passionate web developer with expertise in HTML, CSS, JavaScript, and PHP. Enthusiastic about building interactive and user-friendly web applications.</p>
+            </div>
+            <button class="toggle-btn" onclick="changeName()">Change name</button><br><br>
+            <button class="toggle-btn" onclick="changeDetails()">Change details</button>
+        </span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  
+
+
+</body>
+</html>
