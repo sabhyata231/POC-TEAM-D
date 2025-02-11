@@ -9,16 +9,16 @@
 <body>
   <div class="login-container">
     <h2 class="login">Login Form</h2>
-    <!-- <form id="loginForm" onsubmit=" return validateForm()"> -->
+    
       <form id="loginForm">
       <label for="username">Username</label>
       <input type="text" id="username" name="username" placeholder="Enter your username or email" required>
       
       <label for="password">Password</label>
       <input type="password" id="password" name="password" placeholder="Enter your password" required>
-      <!-- <a href="landing.html">Login</a> -->
+     
       <input class="button" type="submit" onclick="login()" value="Login">
-       <!-- <button type="submit"> <a href="landing.html">Login</a></button> -->
+       
       <p id="error-message"></p>
       <p class="register-link">Don't have an account? <a href="#">Register here</a></p>
     </form>
@@ -28,26 +28,27 @@
     function login(){
      
       event.preventDefault();
-  let username = document.getElementById("username").value.trim();
-  let password = document.getElementById("password").value.trim();
+  let username = document.getElementById("username").value;
+  let password = document.getElementById("password").value;
   let errorMessage = document.getElementById("error-message");
   if (username === " " || password === " ") {
     errorMessage.textContent = "Both fields are required.";
     return true;
   }
-  if (username === "nidhi.elgoss@gmail.com" && password === "elgoss@1234") {
+  if (username === "nidhi.elgoss@gmail.com" && password === "@1234") {
     alert("Login Successful!");
     errorMessage.textContent = "";
-    window.location.href = "Landing.html"; 
+    window.location.href = "landing.html"; 
     return false;  
   } else {
     errorMessage.textContent = "Invalid username or password.";
     return false;
   }
-// saving data on local host
+
   
    
     }
+
     
    
    </script>
